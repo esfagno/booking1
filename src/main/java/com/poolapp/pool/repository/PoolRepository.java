@@ -1,6 +1,7 @@
 package com.poolapp.pool.repository;
 
 import com.poolapp.pool.model.Pool;
+import com.poolapp.pool.repository.custom.PoolRepositoryCustom;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

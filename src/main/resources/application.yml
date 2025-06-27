@@ -3,6 +3,14 @@ spring:
     hibernate:
       ddl-auto: validate
 
+
+  mail:
+    host: localhost
+    port: 1025
+    username:
+    password:
+
+
   datasource:
     url: jdbc:postgresql://localhost:5432/pool
     username: root

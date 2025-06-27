@@ -1,8 +1,8 @@
 package com.poolapp.pool.repository.impl;
 
 import com.poolapp.pool.model.Pool;
-import com.poolapp.pool.repository.PoolRepositoryCustom;
 import com.poolapp.pool.repository.base.criteria.PoolCriteria;
+import com.poolapp.pool.repository.custom.PoolRepositoryCustom;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 

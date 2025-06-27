@@ -1,4 +1,4 @@
-package com.poolapp.pool.repository;
+package com.poolapp.pool.repository.custom;
 
 import com.poolapp.pool.model.Pool;
 
