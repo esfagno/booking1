@@ -1,6 +1,5 @@
 package com.poolapp.pool.dto;
 
-import com.poolapp.pool.model.enums.BookingStatus;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -11,13 +10,11 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDateTime;
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class BookingDTO {
+public class UserSubscriptionDTO {
 
     @NotBlank
     @Size(max = 255)
@@ -26,12 +23,6 @@ public class BookingDTO {
 
     @Valid
     @NotNull
-    private SessionDTO sessionDTO;
-
-    @NotNull
-    private LocalDateTime bookingTime;
-
-    @NotNull
-    private BookingStatus status;
+    private SubscriptionDTO subscriptionDTO;
 
 }

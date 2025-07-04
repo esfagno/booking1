@@ -1,6 +1,6 @@
 package com.poolapp.pool.dto;
 
-import com.poolapp.pool.validation.EndTimeAfterStartTime;
+import com.poolapp.pool.model.enums.SubscriptionStatus;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
@@ -8,22 +8,17 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDateTime;
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@EndTimeAfterStartTime
-public class SessionDTO {
+public class SubscriptionDTO {
 
     @Valid
     @NotNull
-    private PoolDTO poolDTO;
+    private SubscriptionTypeDTO subscriptionTypeDTO;
 
     @NotNull
-    private LocalDateTime startTime;
+    private SubscriptionStatus status;
 
-    @NotNull
-    private LocalDateTime endTime;
 }
